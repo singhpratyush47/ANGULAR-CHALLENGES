@@ -1,0 +1,12 @@
+<div class="card text-center">
+    <div #header class="card-header">
+      <ng-content select="[header]"></ng-content>
+    </div>
+    <div class="card-body">
+        <ng-content select="[body]"></ng-content>
+    </div>
+    <div class="card-footer text-muted">
+      <ng-content select="[footer]"></ng-content>
+    </div>
+    <button (click)="onClick()">Test</button>
+  </div>
